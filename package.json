@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "build": "npx eleventy",
     "start": "npx eleventy --serve"
   },
   "keywords": [],
