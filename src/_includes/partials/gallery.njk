@@ -1,4 +1,5 @@
-{%- for image in screenshots.images.reverse() -%}
+<main>
+    {%- for image in screenshots.images.reverse() -%}
     {%- if image -%}
         <figure>
             <img src="/screenshots/{{ image }}" alt="{{ image }}">
@@ -6,3 +7,4 @@
         </figure>
     {%- endif -%}
 {%- endfor -%}
+</main>
