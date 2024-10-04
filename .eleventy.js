@@ -1,6 +1,7 @@
 module.exports = function(eleventyConfig) {
     // Pass through the assets/img folder to the output folder
     eleventyConfig.addPassthroughCopy("src/assets/");
+	eleventyConfig.addPassthroughCopy("src/screenshots/");
 
      // folders to watch for changes to update site
   eleventyConfig.addWatchTarget("src/");
