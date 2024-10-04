@@ -5,6 +5,7 @@
     --space-vertical: calc(0.5rem + 1svh);
     --summary-line-height: 1.1;
     --text-stroke: 0.25px;
+    --dark-green: #242d15;
 }
 
 /* RESET */
@@ -25,6 +26,7 @@ html {
     scroll-behavior: smooth;
     letter-spacing: -0.25px;
     line-height: 1.5;
+    color: #242d15;
 }
 img {
     display: block;
@@ -48,13 +50,17 @@ body {
     display: flex;
     height: 100svh;
     justify-content: center;
+    background-image: url('/assets/images/bgImage01.png');
+    background-repeat: repeat;
+    background-size: 65%;
 }
 
-.info, header {
-    background-color: aliceblue;
+.info, header, .process {
+    background-color: #cbeb95;
     padding: 1rem;
     border-radius: 1rem;
 }
+
 .side {
   flex: 1 1 33%;
   min-width: 300px;
@@ -129,8 +135,8 @@ details > p {
 
 /* IMAGES */
 figcaption {
-    background-color: peru;
-    color: black;
+    background-color: honeydew;
+    color: #242d15;
     display: block;
     font-size: 0.7rem;
     font-weight: bold;
@@ -163,14 +169,15 @@ p {
     word-wrap: break-word;
     margin-bottom: 1.25rem;
     text-wrap: pretty;
-    -webkit-text-stroke: var(--text-stroke) black;
-    text-stroke: var(--text-stroke) black;
+    -webkit-text-stroke: var(--text-stroke) #242d15;
+    text-stroke: var(--text-stroke) #242d15;
 }
 
 /* LINKS */
 a {
     -webkit-box-decoration-break: clone;
-    background-color: rgba(26, 155, 123, 0.5);
+    background-color: #a2cb5d;
+    color: #36441f;
     border-radius: 0.4rem;
     box-decoration-break: clone;
     line-break: auto;
@@ -178,17 +185,19 @@ a {
     padding: 1px 6px 2px 6px;
     text-decoration: none;
     word-wrap: break-word;
-    font-weight: normal;
+    font-weight: bold;
 	font-style: italic;
     display: inline;
+    -webkit-text-stroke: 0 #242d15;
+    text-stroke: 0 #242d15;
 
 }
 
 /* OTHER */
 ul {
     list-style: none;
-    -webkit-text-stroke: var(--text-stroke) black;
-    text-stroke: var(--text-stroke) black;
+    -webkit-text-stroke: var(--text-stroke) #242d15;
+    text-stroke: var(--text-stroke) #242d15;
     margin-bottom: 1.5rem;
 }
 
