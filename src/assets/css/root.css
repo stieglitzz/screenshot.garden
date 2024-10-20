@@ -1,0 +1,14 @@
+/* ROOT */
+:root {
+  --details-indent: 2rem;
+  --gap: calc(1rem + 1.5svw);
+  --space-vertical: calc(0.5rem + 1svh);
+  --summary-line-height: 1.1;
+  --text-stroke: 0.5px;
+  --darkest-green: #237226;
+  --dark-green: #23801d;
+  --green: #a2cb5d;
+  --light-green: rgba(199, 224, 158, 0.95);
+  --padding-vert: calc(1rem + 5svh);
+  --padding-hori: calc(1rem + 5svw);
+}

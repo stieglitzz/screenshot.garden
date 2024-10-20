@@ -1,0 +1,39 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Courier New";
+  font-size: 13px;
+  scroll-behavior: smooth;
+  letter-spacing: -0.25px;
+  line-height: 1.5;
+  color: var(--darkest-green);
+  height: 100%;
+  overflow: hidden; /* Prevent body overflow */
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+summary {
+  text-wrap: balance;
+  font-family: "Courier New";
+  font-weight: bold;
+  color: var(--dark-green);
+}
