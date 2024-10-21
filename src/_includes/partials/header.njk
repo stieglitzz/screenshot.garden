@@ -1,4 +1,6 @@
 <header>
     <h1>{{ h1 }}</h1>
-    <p>{{ description | safe }}</p>
+    {% if description and description.trim() %}
+        {{ description | safe }}
+    {% endif %}
 </header>
