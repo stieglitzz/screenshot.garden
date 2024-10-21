@@ -5,10 +5,12 @@
   --space-vertical: calc(0.5rem + 1svh);
   --summary-line-height: 1.1;
   --text-stroke: 0.5px;
-  --darkest-green: #237226;
+  --darkest-green: #242d15;
+  --darker-green: #36441f;
   --dark-green: #23801d;
   --green: #a2cb5d;
-  --light-green: rgba(199, 224, 158, 0.95);
+  --light-green: #cbeb95;
+  --lightest-green: rgba(199, 224, 158, 0.85);
   --padding-vert: calc(1rem + 5svh);
   --padding-hori: calc(1rem + 5svw);
 }
