@@ -11,7 +11,7 @@ body {
 }
 
 .grid {
-  margin: var(--padding-vert) var(--padding-hori);
+  /* margin: var(--padding-vert) var(--padding-hori); */
   width: 60svw;
   /* padding: var(--padding-vert) var(--padding-hori); */
   display: grid;
@@ -58,9 +58,17 @@ header {
 
 main {
   overflow-y: auto; /* Enable vertical scrolling */
-  height: 100%; /* Fill vertical space */
+  min-height: fit-content;
+  max-height: 100%; /* Fill vertical space */
   grid-column: 2; /* Ensure main is in the second column */
   grid-area: main;
+}
+
+.process {
+  background-color: var(--light-green);
+  padding: 1rem;
+  border-radius: 1rem;
+  height: fit-content
 }
 
 /* DETAILS */
@@ -97,7 +105,7 @@ details[open]:has(+ details) {
 details > p:first-of-type {
   margin-top: 0.15rem;
 }
-details > p:last-of-type {
+details > p:last-of-type, header > p:last-of-type, main > p:last-of-type {
   margin-bottom: 0;
 }
 details > p {
@@ -133,9 +141,9 @@ h1 {
 }
 
 /* PARAGRAPH */
-h1 + p {
+/* h1 + p {
   margin-bottom: 0;
-}
+} */
 
 p {
   line-break: auto;
@@ -160,7 +168,7 @@ a {
   text-decoration: none;
   word-wrap: break-word;
   font-weight: bold;
-  font-style: italic;
+font-size: 0.9rem;
   display: inline;
   -webkit-text-stroke: 0 var(--darkest-green);
   text-stroke: 0 var(--darkest-green);
