@@ -1,5 +1,4 @@
-<div class="main-wrapper">
-<main>
+<main class="gallery">
     {%- for image in screenshots.images | reverse -%} <!-- Using the filter method -->
     {%- if image -%}
         <figure>
@@ -9,4 +8,3 @@
     {%- endif -%}
     {%- endfor -%}
 </main>
-</div>
