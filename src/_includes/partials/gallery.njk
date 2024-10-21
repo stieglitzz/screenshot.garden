@@ -1,10 +1,11 @@
 <main class="gallery">
-    {%- for image in screenshots.images | reverse -%} <!-- Using the filter method -->
-    {%- if image -%}
-        <figure>
-            <img src="/screenshots/{{ image }}" alt="{{ image }}">
-            <figcaption>{{ image }}</figcaption>
-        </figure>
-    {%- endif -%}
+    {%- for image in screenshots.images | reverse -%}
+        <!-- Using the filter method -->
+        {%- if image -%}
+            <figure>
+                <img src="/screenshots/{{ image }}" alt="{{ image }}">
+                <figcaption>{{ image }}</figcaption>
+            </figure>
+        {%- endif -%}
     {%- endfor -%}
 </main>
