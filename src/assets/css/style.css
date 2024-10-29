@@ -58,7 +58,6 @@ header {
 
 main {
   overflow-y: auto; /* Enable vertical scrolling */
-  min-height: fit-content;
   max-height: 100%; /* Fill vertical space */
   grid-column: 2; /* Ensure main is in the second column */
   grid-area: main;
